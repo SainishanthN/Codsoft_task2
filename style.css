@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 140px; /* Ensures content doesn't overlap with fixed footer and navbar */
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Footer Section (Fixed at the top) */
+  #footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282727;
+    color: white;
+    padding: 10px 0; /* Reduced height */
+    z-index: 1000;
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+  }
+  
+  .social-icons a {
+    padding-top: 3px;
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffbf00;
+  }
+  
+  .contact-info p {
+    margin-left: auto; /* Aligns contact info to the right */
+    white-space: nowrap; /* Keeps everything in one line */
+  }
+  
+  .call-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .call-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navbar Section (Fixed Below Footer) */
+  #navbar {
+    background-color: #8daccd;
+    color: rgb(159, 155, 155);
+    padding: 10px 50px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 40px; /* Navbar is fixed below the footer */
+    z-index: 900;
+    font-size: 16px;
+  }
+  
+  .nav-left h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-left: 0;
+    color: #0c0c0c;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-right: 15px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #ffbf00;
+  }
+  
+  /* Home Section */
+  #home {
+    height: 100vh;
+    background-image: url('./bg.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #home h2 {
+    color: rgb(213, 68, 11);
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(12, 12, 12, 0.5);
+    position: relative; /* Ensures text stays above the overlay */
+   
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  #home p {
+    color: rgb(190, 78, 17);
+    font-size: 24px;
+    margin-top: 10px;
+    position: relative; /* Ensures text stays above the overlay */
+   
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* About Us Section */
+  #about {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(201, 169, 169);
+    
+  }
+  .about-content{
+    display: flex;
+    position: relative; /* Ensures text stays above the overlay */
+    color: rgb(15, 13, 13);
+    z-index: 2;
+    
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 50px;
+    background-color: #b2d0a4;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .service-item {
+    text-align: center;
+
+  }
+  .service-item img{
+    height: 350px;
+    width: 350px;
+  }
+  
+  .service-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .con-reg{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #a69b79;
+  }
+  .call-btn2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #76a9e3;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
